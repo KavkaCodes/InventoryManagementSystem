@@ -64,8 +64,8 @@
             splitContainer1.Panel2.Controls.Add(btn_LogOut);
             splitContainer1.Panel2.Controls.Add(btn_AddLocation);
             splitContainer1.Panel2.Controls.Add(btn_AddProduct);
-            splitContainer1.Size = new System.Drawing.Size(800, 450);
-            splitContainer1.SplitterDistance = 404;
+            splitContainer1.Size = new System.Drawing.Size(803, 466);
+            splitContainer1.SplitterDistance = 405;
             splitContainer1.TabIndex = 0;
             // 
             // lbl_BinFunc
@@ -74,7 +74,7 @@
             lbl_BinFunc.AutoSize = true;
             lbl_BinFunc.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_BinFunc.ForeColor = System.Drawing.SystemColors.Window;
-            lbl_BinFunc.Location = new System.Drawing.Point(21, 14);
+            lbl_BinFunc.Location = new System.Drawing.Point(15, 22);
             lbl_BinFunc.Name = "lbl_BinFunc";
             lbl_BinFunc.Size = new System.Drawing.Size(137, 30);
             lbl_BinFunc.TabIndex = 4;
@@ -84,7 +84,7 @@
             // btn_MoveInventory
             // 
             btn_MoveInventory.Anchor = System.Windows.Forms.AnchorStyles.None;
-            btn_MoveInventory.Location = new System.Drawing.Point(113, 345);
+            btn_MoveInventory.Location = new System.Drawing.Point(107, 353);
             btn_MoveInventory.Name = "btn_MoveInventory";
             btn_MoveInventory.Size = new System.Drawing.Size(160, 44);
             btn_MoveInventory.TabIndex = 3;
@@ -94,7 +94,7 @@
             // btn_StockIn
             // 
             btn_StockIn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            btn_StockIn.Location = new System.Drawing.Point(113, 248);
+            btn_StockIn.Location = new System.Drawing.Point(107, 256);
             btn_StockIn.Name = "btn_StockIn";
             btn_StockIn.Size = new System.Drawing.Size(160, 44);
             btn_StockIn.TabIndex = 2;
@@ -104,7 +104,7 @@
             // btn_StockOut
             // 
             btn_StockOut.Anchor = System.Windows.Forms.AnchorStyles.None;
-            btn_StockOut.Location = new System.Drawing.Point(113, 161);
+            btn_StockOut.Location = new System.Drawing.Point(107, 169);
             btn_StockOut.Name = "btn_StockOut";
             btn_StockOut.Size = new System.Drawing.Size(160, 44);
             btn_StockOut.TabIndex = 1;
@@ -114,12 +114,13 @@
             // btn_ProdLookup
             // 
             btn_ProdLookup.Anchor = System.Windows.Forms.AnchorStyles.None;
-            btn_ProdLookup.Location = new System.Drawing.Point(113, 69);
+            btn_ProdLookup.Location = new System.Drawing.Point(107, 77);
             btn_ProdLookup.Name = "btn_ProdLookup";
             btn_ProdLookup.Size = new System.Drawing.Size(160, 44);
             btn_ProdLookup.TabIndex = 0;
             btn_ProdLookup.Text = "Product Lookup";
             btn_ProdLookup.UseVisualStyleBackColor = true;
+            btn_ProdLookup.Click += btn_ProdLookup_Click;
             // 
             // label1
             // 
@@ -127,7 +128,7 @@
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label1.ForeColor = System.Drawing.SystemColors.Window;
-            label1.Location = new System.Drawing.Point(19, 14);
+            label1.Location = new System.Drawing.Point(25, 22);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(149, 30);
             label1.TabIndex = 5;
@@ -136,7 +137,7 @@
             // btn_LogOut
             // 
             btn_LogOut.Anchor = System.Windows.Forms.AnchorStyles.None;
-            btn_LogOut.Location = new System.Drawing.Point(192, 363);
+            btn_LogOut.Location = new System.Drawing.Point(198, 371);
             btn_LogOut.Name = "btn_LogOut";
             btn_LogOut.Size = new System.Drawing.Size(90, 26);
             btn_LogOut.TabIndex = 4;
@@ -146,7 +147,7 @@
             // btn_AddLocation
             // 
             btn_AddLocation.Anchor = System.Windows.Forms.AnchorStyles.None;
-            btn_AddLocation.Location = new System.Drawing.Point(122, 161);
+            btn_AddLocation.Location = new System.Drawing.Point(128, 169);
             btn_AddLocation.Name = "btn_AddLocation";
             btn_AddLocation.Size = new System.Drawing.Size(160, 44);
             btn_AddLocation.TabIndex = 2;
@@ -156,7 +157,7 @@
             // btn_AddProduct
             // 
             btn_AddProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
-            btn_AddProduct.Location = new System.Drawing.Point(122, 69);
+            btn_AddProduct.Location = new System.Drawing.Point(128, 77);
             btn_AddProduct.Name = "btn_AddProduct";
             btn_AddProduct.Size = new System.Drawing.Size(160, 44);
             btn_AddProduct.TabIndex = 1;
@@ -168,11 +169,11 @@
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.SystemColors.Highlight;
-            ClientSize = new System.Drawing.Size(800, 450);
+            ClientSize = new System.Drawing.Size(803, 466);
             Controls.Add(splitContainer1);
             ForeColor = System.Drawing.SystemColors.ControlText;
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             Name = "Dashboard";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Dashboard";
             WindowState = System.Windows.Forms.FormWindowState.Maximized;
             splitContainer1.Panel1.ResumeLayout(false);

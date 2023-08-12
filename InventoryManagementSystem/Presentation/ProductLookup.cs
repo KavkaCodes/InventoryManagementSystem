@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace InventoryManagementSystem.Presentation
 {
-    public partial class Dashboard : Form
+    public partial class ProductLookup : Form
     {
-        public Dashboard()
+        public ProductLookup()
         {
             InitializeComponent();
         }
@@ -20,13 +20,11 @@ namespace InventoryManagementSystem.Presentation
 
         }
 
-        private void btn_ProdLookup_Click(object sender, EventArgs e)
+        private void btn_Cancel_Click(object sender, EventArgs e)
         {
-            ProductLookup productLookup = new ProductLookup();
+            Dashboard dashboard = new Dashboard();
             this.Hide();
-            productLookup.Tag = this.Text;
-            productLookup.ShowDialog();
-            
+            dashboard.Show();
         }
     }
 }
