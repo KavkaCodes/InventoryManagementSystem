@@ -18,7 +18,7 @@ namespace InventoryManagementSystem
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CreateAccount());
+            Application.Run(new Dashboard());
         }
     }
 }
